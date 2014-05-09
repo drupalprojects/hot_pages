@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * panopoly_pages.features.inc
+ * hot_pages.features.inc
  */
 
 /**
  * Implements hook_ctools_plugin_api().
  */
-function panopoly_pages_ctools_plugin_api($module = NULL, $api = NULL) {
+function hot_pages_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "page_manager" && $api == "pages_default") {
     return array("version" => "1");
   }
@@ -22,9 +22,9 @@ function panopoly_pages_ctools_plugin_api($module = NULL, $api = NULL) {
 /**
  * Implements hook_node_info().
  */
-function panopoly_pages_node_info() {
+function hot_pages_node_info() {
   $items = array(
-    'panopoly_page' => array(
+    'hotsauce_page' => array(
       'name' => t('Content Page'),
       'base' => 'node_content',
       'description' => t('An important page to display to users on your site.'),

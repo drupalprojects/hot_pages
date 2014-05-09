@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * panopoly_pages.features.field_base.inc
+ * hot_pages.features.field_base.inc
  */
 
 /**
  * Implements hook_field_default_field_bases().
  */
-function panopoly_pages_field_default_field_bases() {
+function hot_pages_field_default_field_bases() {
   $field_bases = array();
 
   // Exported field_base: 'body'
@@ -64,7 +64,7 @@ function panopoly_pages_field_default_field_bases() {
     'settings' => array(
       'allowed_values' => array(
         0 => array(
-          'vocabulary' => 'panopoly_categories',
+          'vocabulary' => 'hotsauce_categories',
           'parent' => 0,
         ),
       ),

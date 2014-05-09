@@ -1,18 +1,18 @@
 <?php
 /**
  * @file
- * panopoly_pages.features.field_instance.inc
+ * hot_pages.features.field_instance.inc
  */
 
 /**
  * Implements hook_field_default_field_instances().
  */
-function panopoly_pages_field_default_field_instances() {
+function hot_pages_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-panopoly_page-body'
-  $field_instances['node-panopoly_page-body'] = array(
-    'bundle' => 'panopoly_page',
+  // Exported field_instance: 'node-hotsauce_page-body'
+  $field_instances['node-hotsauce_page-body'] = array(
+    'bundle' => 'hotsauce_page',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -79,9 +79,9 @@ function panopoly_pages_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-panopoly_page-field_featured_categories'
-  $field_instances['node-panopoly_page-field_featured_categories'] = array(
-    'bundle' => 'panopoly_page',
+  // Exported field_instance: 'node-hotsauce_page-field_featured_categories'
+  $field_instances['node-hotsauce_page-field_featured_categories'] = array(
+    'bundle' => 'hotsauce_page',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -128,9 +128,9 @@ function panopoly_pages_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-panopoly_page-field_featured_image'
-  $field_instances['node-panopoly_page-field_featured_image'] = array(
-    'bundle' => 'panopoly_page',
+  // Exported field_instance: 'node-hotsauce_page-field_featured_image'
+  $field_instances['node-hotsauce_page-field_featured_image'] = array(
+    'bundle' => 'hotsauce_page',
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -139,7 +139,7 @@ function panopoly_pages_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => 'panopoly_image_half',
+          'image_style' => 'hotsauce_image_half',
         ),
         'type' => 'image',
         'weight' => 0,
@@ -149,7 +149,7 @@ function panopoly_pages_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => 'content',
-          'image_style' => 'panopoly_image_half',
+          'image_style' => 'hotsauce_image_half',
         ),
         'type' => 'image',
         'weight' => 0,
@@ -165,7 +165,7 @@ function panopoly_pages_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => 'content',
-          'image_style' => 'panopoly_image_quarter',
+          'image_style' => 'hotsauce_image_quarter',
         ),
         'type' => 'image',
         'weight' => 0,
@@ -175,7 +175,7 @@ function panopoly_pages_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => 'content',
-          'image_style' => 'panopoly_image_quarter',
+          'image_style' => 'hotsauce_image_quarter',
         ),
         'type' => 'image',
         'weight' => 0,
@@ -210,11 +210,11 @@ function panopoly_pages_field_default_field_instances() {
         'manualcrop_maximize_default_crop_area' => 1,
         'manualcrop_require_cropping' => array(),
         'manualcrop_styles_list' => array(
-          'panopoly_image_full' => 'panopoly_image_full',
+          'hotsauce_image_full' => 'hotsauce_image_full',
         ),
         'manualcrop_styles_mode' => 'include',
         'manualcrop_thumblist' => 0,
-        'preview_image_style' => 'panopoly_image_full',
+        'preview_image_style' => 'hotsauce_image_full',
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
@@ -222,9 +222,9 @@ function panopoly_pages_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-panopoly_page-field_featured_status'
-  $field_instances['node-panopoly_page-field_featured_status'] = array(
-    'bundle' => 'panopoly_page',
+  // Exported field_instance: 'node-hotsauce_page-field_featured_status'
+  $field_instances['node-hotsauce_page-field_featured_status'] = array(
+    'bundle' => 'hotsauce_page',
     'default_value' => array(
       0 => array(
         'value' => 0,

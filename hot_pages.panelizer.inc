@@ -1,22 +1,22 @@
 <?php
 /**
  * @file
- * panopoly_pages.panelizer.inc
+ * hot_pages.panelizer.inc
  */
 
 /**
  * Implements hook_panelizer_defaults().
  */
-function panopoly_pages_panelizer_defaults() {
+function hot_pages_panelizer_defaults() {
   $export = array();
 
   $panelizer = new stdClass();
   $panelizer->disabled = FALSE; /* Edit this to true to make a default panelizer disabled initially */
   $panelizer->api_version = 1;
-  $panelizer->name = 'node:panopoly_page:default';
+  $panelizer->name = 'node:hotsauce_page:default';
   $panelizer->title = 'Default';
   $panelizer->panelizer_type = 'node';
-  $panelizer->panelizer_key = 'panopoly_page';
+  $panelizer->panelizer_key = 'hotsauce_page';
   $panelizer->no_blocks = FALSE;
   $panelizer->css_id = 'page-page';
   $panelizer->css = '';
@@ -61,7 +61,7 @@ function panopoly_pages_panelizer_defaults() {
       'delta_reversed' => FALSE,
       'formatter_settings' => array(
         'image_link' => 'content',
-        'image_style' => 'panopoly_image_half',
+        'image_style' => 'hotsauce_image_half',
       ),
       'context' => 'panelizer',
       'override_title' => 0,
@@ -200,15 +200,15 @@ function panopoly_pages_panelizer_defaults() {
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-34b4f35e-bc4b-4819-905c-6b6bf84bffe1';
   $panelizer->display = $display;
-  $export['node:panopoly_page:default'] = $panelizer;
+  $export['node:hotsauce_page:default'] = $panelizer;
 
   $panelizer = new stdClass();
   $panelizer->disabled = FALSE; /* Edit this to true to make a default panelizer disabled initially */
   $panelizer->api_version = 1;
-  $panelizer->name = 'node:panopoly_page:default:default';
+  $panelizer->name = 'node:hotsauce_page:default:default';
   $panelizer->title = 'Default';
   $panelizer->panelizer_type = 'node';
-  $panelizer->panelizer_key = 'panopoly_page';
+  $panelizer->panelizer_key = 'hotsauce_page';
   $panelizer->no_blocks = FALSE;
   $panelizer->css_id = '';
   $panelizer->css = '';
@@ -250,7 +250,7 @@ function panopoly_pages_panelizer_defaults() {
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
       'formatter_settings' => array(
-        'image_style' => 'panopoly_image_half',
+        'image_style' => 'hotsauce_image_half',
         'image_link' => '',
       ),
       'context' => 'panelizer',
@@ -357,15 +357,15 @@ function panopoly_pages_panelizer_defaults() {
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $panelizer->display = $display;
-  $export['node:panopoly_page:default:default'] = $panelizer;
+  $export['node:hotsauce_page:default:default'] = $panelizer;
 
   $panelizer = new stdClass();
   $panelizer->disabled = FALSE; /* Edit this to true to make a default panelizer disabled initially */
   $panelizer->api_version = 1;
-  $panelizer->name = 'node:panopoly_page:default:featured';
+  $panelizer->name = 'node:hotsauce_page:default:featured';
   $panelizer->title = 'Default';
   $panelizer->panelizer_type = 'node';
-  $panelizer->panelizer_key = 'panopoly_page';
+  $panelizer->panelizer_key = 'hotsauce_page';
   $panelizer->no_blocks = FALSE;
   $panelizer->css_id = '';
   $panelizer->css = '';
@@ -409,7 +409,7 @@ function panopoly_pages_panelizer_defaults() {
       'delta_reversed' => FALSE,
       'formatter_settings' => array(
         'image_link' => 'content',
-        'image_style' => 'panopoly_image_half',
+        'image_style' => 'hotsauce_image_half',
       ),
       'context' => 'panelizer',
       'override_title' => 0,
@@ -512,15 +512,15 @@ function panopoly_pages_panelizer_defaults() {
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $panelizer->display = $display;
-  $export['node:panopoly_page:default:featured'] = $panelizer;
+  $export['node:hotsauce_page:default:featured'] = $panelizer;
 
   $panelizer = new stdClass();
   $panelizer->disabled = FALSE; /* Edit this to true to make a default panelizer disabled initially */
   $panelizer->api_version = 1;
-  $panelizer->name = 'node:panopoly_page:default:teaser';
+  $panelizer->name = 'node:hotsauce_page:default:teaser';
   $panelizer->title = 'Default';
   $panelizer->panelizer_type = 'node';
-  $panelizer->panelizer_key = 'panopoly_page';
+  $panelizer->panelizer_key = 'hotsauce_page';
   $panelizer->no_blocks = FALSE;
   $panelizer->css_id = '';
   $panelizer->css = '';
@@ -562,7 +562,7 @@ function panopoly_pages_panelizer_defaults() {
       'delta_reversed' => FALSE,
       'formatter_settings' => array(
         'image_link' => 'content',
-        'image_style' => 'panopoly_image_quarter',
+        'image_style' => 'hotsauce_image_quarter',
       ),
       'context' => 'panelizer',
       'override_title' => 1,
@@ -641,7 +641,7 @@ function panopoly_pages_panelizer_defaults() {
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $panelizer->display = $display;
-  $export['node:panopoly_page:default:teaser'] = $panelizer;
+  $export['node:hotsauce_page:default:teaser'] = $panelizer;
 
   return $export;
 }
